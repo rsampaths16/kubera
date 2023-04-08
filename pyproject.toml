@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "kubera"
+version = "0.1.0"
+description = "Track price of product across different online listings"
+authors = ["R. Sampath Sukesh <rsampaths16@gmail.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+fastapi = "^0.95.0"
+uvicorn = "^0.21.1"
+sqlalchemy = "^2.0.9"
+typer = "^0.7.0"
+pydantic = "^1.10.7"
+prometheus-client = "^0.16.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+pytest-mock = "^3.10.0"
+hypothesis = "^6.71.0"
+tox = "^4.4.11"
+pre-commit = "^3.2.2"
+mkdocs = "^1.4.2"
+mkdocstrings = "^0.21.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
